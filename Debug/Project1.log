@@ -1,0 +1,5 @@
+﻿Student.obj : error LNK2019: unresolved external symbol "public: void __thiscall Student::AddGrade(int)" (?AddGrade@Student@@QAEXH@Z) referenced in function _main
+Student.obj : error LNK2019: unresolved external symbol "public: void __thiscall Student::Debug(void)" (?Debug@Student@@QAEXXZ) referenced in function _main
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall Student::Student(void)" (??0Student@@QAE@XZ) referenced in function _main
+Student.obj : error LNK2019: unresolved external symbol "public: __thiscall Student::~Student(void)" (??1Student@@QAE@XZ) referenced in function _main
+C:\Users\CCSDuser\Documents\Visual Studio 2017\Projects\Project1\Debug\Project1.exe : fatal error LNK1120: 4 unresolved externals
