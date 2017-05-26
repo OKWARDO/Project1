@@ -1,8 +1,8 @@
 ﻿  Utilities.cpp
   test.cpp
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(21): warning C4778: 'scanf' : unterminated format string '%'
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(21): warning C4474: 'scanf' : too many arguments passed for format string
-  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(21): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): warning C4778: 'scanf' : unterminated format string '%'
+c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): warning C4474: 'scanf' : too many arguments passed for format string
+  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   Student.cpp
   maincpp.cpp
   Generating Code...

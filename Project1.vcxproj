@@ -112,6 +112,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="a.hpp" />
     <ClInclude Include="Student.hpp" />
     <ClInclude Include="test.hpp" />
     <ClInclude Include="Utilities.hpp" />

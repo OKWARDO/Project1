@@ -82,7 +82,29 @@ Student::~Student()
 
 };
 
-int main()
+int main(int argc, char* argv[])
+
+
+
+//{
+//	A a;
+//	a.AddNumber(1);
+//	a.AddNumber(2);
+//	a.AddNumber(3);
+//	a.Debug();
+//	printf("Hello world\r\n");
+//	char c;
+//
+//
+//	int myarray[10];
+//
+//
+//	int size = sizeof(myarray);
+//	printf("The size of an int is = %i", size);
+//	scanf("%c", &c);
+//	return 0;
+//}
+
 {
 	Student aStudent;
 	Student anotherStudent;

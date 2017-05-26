@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <iostream>
 #include <cstring>
+#include "a.hpp"
 
 using namespace std;
 
