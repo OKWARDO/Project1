@@ -1,10 +1,6 @@
-﻿  Utilities.cpp
-  test.cpp
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): warning C4778: 'scanf' : unterminated format string '%'
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): warning C4474: 'scanf' : too many arguments passed for format string
-  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.cpp(22): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-  Student.cpp
-  maincpp.cpp
+﻿  Student.cpp
   Generating Code...
+  Skipping... (no relevant changes detected)
+  maincpp.cpp
   Project1.vcxproj -> C:\Users\CCSDuser\Documents\Visual Studio 2017\Projects\Project1\Project1\Debug\Project1.exe
   Project1.vcxproj -> C:\Users\CCSDuser\Documents\Visual Studio 2017\Projects\Project1\Project1\Debug\Project1.pdb (Partial PDB)

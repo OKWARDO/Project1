@@ -1,11 +1,16 @@
-#pragma once
+
 #ifndef STUDENT_HPP
 #define STUDENT_HPP
 #include <string>
+#define DEFAULT_BUFFER_CAPACITY 10
+#include <cstdio>
+using namespace std;
 
 class Student
 {
-private:
+	protected: 
+		
+
 	int m_id;
 	std::string m_FirstName;
 	std::string m_LastName;
@@ -28,6 +33,11 @@ public:
 	//void ChangeID(int _new_id);
 	//Student();
 	//int getID();
+};
+
+class SuperStudent : public Student
+{
+
 };
 
 

@@ -12,7 +12,7 @@ using namespace std;
 void test01(void)
 {
 	Student s;
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < DEFAULT_BUFFER_CAPACITY; i++)
 	{
 		s.AddGrade(i);
 
@@ -24,10 +24,21 @@ void test01(void)
 
 void test02(void)
 {
-	int* ar = new int[10];
-	ExtendArrayInt(&ar, 10, 20);
-	ar[19] = 666;
-	cout << ar[19] << endl;
+	int old = DEFAULT_BUFFER_CAPACITY;
+	int new_c = 2 * DEFAULT_BUFFER_CAPACITY;
+	int* ar = new int[DEFAULT_BUFFER_CAPACITY];
+	for (int i = 0; i < DEFAULT_BUFFER_CAPACITY; i++)
+	{
+		ar[i] = i;
+	}
+	ExtendArrayInt(&ar, old, new_c);
+	for (int i = DEFAULT_BUFFER_CAPACITY; i < 2 * DEFAULT_BUFFER_CAPACITY; i++)
+	{
+		ar[i] = i; 
+	}
+	for(int i = 0; i < new_c; i++)
+
+	std::cout << i << std::endl;
 	delete[] ar;
 }
 //void test03(void)

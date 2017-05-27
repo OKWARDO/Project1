@@ -118,13 +118,9 @@
     <ClInclude Include="Utilities.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\GitHub\PRG 422\week1\week1\maincpp.cpp" />
+    <ClCompile Include="maincpp.cpp" />
     <ClCompile Include="Student.cpp" />
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="Utilities.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Studentsolution.sln" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

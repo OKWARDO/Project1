@@ -34,41 +34,46 @@ using namespace std;
 
 //void Student::ChangeID(int new_id)
 //
+void Student::Debug(void)
+{
+	cout << "Number of grade = " << m_counter << endl;
+	for (int i = 0; i < m_counter; i++ )
+		cout << "grade = " << m_grades[ i ] << endl;
 
-	void Student::Debug()
-	{
-		cout << "Number of grade = " << m_counter << endl;
-	
-	
+}
+
+	//void Student::Debug()
+			
 		//for (int i = 0; i < m_counter; i++)
-	
-	
+		
 		//cout << array [] << endl;
-	}
+	
 
 	void Student::AddGrade(int g)
 	{
+		m_grades[m_counter] = g;
 		m_counter++;
 		//if need Extend array
-		ExtendArrayInt(&m_grades, m_capacity, 2 * m_capacity);
-		m_capacity += 10;
+		//ExtendArrayInt(&m_grades, m_capacity, 2 * m_capacity);
+		//m_capacity += 10;
 
 
 	}
 
    
 
-Student::Student()
+Student::Student(void)
 {
 	// new is a memory alocation operator	
 
 
 	
 	m_id = 0;
-	m_FirstName = " ";
-	m_capacity = 10;
+	m_FirstName = "John ";
+	m_LastName = "Doe";
+	m_capacity = DEFAULT_BUFFER_CAPACITY;
 	m_counter = 0;
-	m_grades = new int[ 10 ];
+	m_grades = new int[ DEFAULT_BUFFER_CAPACITY ];
 	m_num_grades = 0;
 	//cout << "Enter Grades " << AddGrade << endl;
 	cout << "Constructor called";
@@ -81,6 +86,8 @@ Student::~Student()
 	cout << "Destructor called";
 
 };
+
+
 
 int main(int argc, char* argv[])
 
@@ -109,6 +116,11 @@ int main(int argc, char* argv[])
 	Student aStudent;
 	Student anotherStudent;
 	Student s;
+	for (int i = 0; i < 10; i++)
+		s.AddGrade(i);
+
+	s.Debug();
+	system("pause");
 }
 	/*{
 		int res = 0;
