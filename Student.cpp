@@ -122,6 +122,7 @@ int main(int argc, char* argv[])
 	s.Debug();
 	system("pause");
 }
+
 	/*{
 		int res = 0;
 		int v1 = 1;
@@ -141,17 +142,17 @@ int main(int argc, char* argv[])
 	//anotherStudent.set m_num_grades(" ");
 	//cout << "Student: " << aStudent.get _FirstName(), aStudent.get _LastName(), << "FirstName, LastName: " <<
 	//	aStudent.getgrades << "Grade is:  " << endl;
-//	void AddGrade();
-//	{int n;
+	//void AddGrade();
+	//{int n;
 //
-//	for (int i = 0; i < 30; i++) {
-//		AddGrade();
-//		s.AddGrade((float)i);
-//	}
-//
-//	s.Debug();
-//	return  0;
-//	}
+//for (int i = 0; i < 30; i++) 
+	//AddGrade(i);
+	//s.AddGrade(i);
+
+
+	//s.Debug();
+	//return  0;
+	//};
 //
 //};
 //	void AddGrade()
