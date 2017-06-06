@@ -1,5 +1,5 @@
 #ifndef CLASS_A
-#define CLASS_A I 
+#define CLASS_A
 class A
 {
 public:

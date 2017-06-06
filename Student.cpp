@@ -1,5 +1,6 @@
 #include "Student.hpp"
 #include "Utilities.hpp"
+#include "test.hpp"
 #include <iostream>
 #include <cstring>
 
@@ -10,30 +11,6 @@ using namespace std;
 
 
 
-//int main()
-//{
-//	//for (n = 0; n<5; ++n)
-//	//{
-//		//result + = foo[n];
-//	//}
-//	//cout << result;
-//	return 0;
-//}
-
-//void Student::AddGrade(int grade)
-//{
-//	if (m_counter <= (30))
-//		return;
-//	//else
-//	//{
-//	//	array [int n =5] = n;
-//	//	int* Studentm_counter;
-//	//}
-//
-//}
-
-//void Student::ChangeID(int new_id)
-//
 void Student::Debug(void)
 {
 	cout << "Number of grade = " << m_counter << endl;
@@ -49,47 +26,51 @@ void Student::Debug(void)
 		//cout << array [] << endl;
 	
 
-	void Student::AddGrade(int g)
+void Student::AddGrade(int g)
+{
+	m_grades[m_counter] = g;
+	m_counter++;
+	//if need Extend array
+	if (m_counter == m_capacity)
 	{
-		m_grades[m_counter] = g;
-		m_counter++;
-		//if need Extend array
-		//ExtendArrayInt(&m_grades, m_capacity, 2 * m_capacity);
-		//m_capacity += 10;
-
-
+		ExtendArrayInt(&m_grades, m_capacity, 2 * m_capacity);
+		m_capacity += 10;
 	}
+
+
+
+}
 
    
 
-Student::Student(void)
+Student::Student()
 {
 	// new is a memory alocation operator	
 
 
 	
 	m_id = 0;
-	m_FirstName = "John ";
+	m_FirstName = "John";
 	m_LastName = "Doe";
 	m_capacity = DEFAULT_BUFFER_CAPACITY;
 	m_counter = 0;
 	m_grades = new int[ DEFAULT_BUFFER_CAPACITY ];
 	m_num_grades = 0;
-	//cout << "Enter Grades " << AddGrade << endl;
-	cout << "Constructor called";
+	//cout << "Enter Grades " << &AddGrade << endl;
+	cout << "Constructor called" << endl;
 	
 
 };
 Student::~Student()
 {
 	delete[] m_grades;
-	cout << "Destructor called";
+	cout << "Destructor called" << endl;
 
 };
 
 
 
-int main(int argc, char* argv[])
+//int main(int argc, char* argv[])
 
 
 
@@ -112,16 +93,16 @@ int main(int argc, char* argv[])
 //	return 0;
 //}
 
-{
-	Student aStudent;
-	Student anotherStudent;
-	Student s;
-	for (int i = 0; i < 10; i++)
-		s.AddGrade(i);
-
-	s.Debug();
-	system("pause");
-}
+//{
+//	Student aStudent;
+//	Student anotherStudent;
+//	Student s;
+//	for (int i = 0; i < 10; i++)
+//		s.AddGrade(i);
+//
+//	s.Debug();
+//	system("pause");
+//}
 
 	/*{
 		int res = 0;
@@ -143,16 +124,7 @@ int main(int argc, char* argv[])
 	//cout << "Student: " << aStudent.get _FirstName(), aStudent.get _LastName(), << "FirstName, LastName: " <<
 	//	aStudent.getgrades << "Grade is:  " << endl;
 	//void AddGrade();
-	//{int n;
-//
-//for (int i = 0; i < 30; i++) 
-	//AddGrade(i);
-	//s.AddGrade(i);
-
-
-	//s.Debug();
-	//return  0;
-	//};
+	
 //
 //};
 //	void AddGrade()

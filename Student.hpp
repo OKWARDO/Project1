@@ -2,7 +2,7 @@
 #ifndef STUDENT_HPP
 #define STUDENT_HPP
 #include <string>
-#define DEFAULT_BUFFER_CAPACITY 10
+#define DEFAULT_BUFFER_CAPACITY 30
 #include <cstdio>
 using namespace std;
 
@@ -23,9 +23,11 @@ public:
 	
 	void AddGrade(int grade);
 	void Debug();
+	
 	//Student(void);
 	Student();
-	~Student();//default constructor
+	~Student();
+//default constructor
 	//~Student(void);
 	//int grade;
 	//int n() { return m_counter; }
@@ -35,17 +37,12 @@ public:
 	//int getID();
 };
 
-class SuperStudent : public Student
-{
+//class SuperStudent : public Student
+//{
 
-};
-
-
-
-
-
-
-//Student.cpp
+//};
 
 
 #endif
+
+

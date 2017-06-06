@@ -3,19 +3,14 @@
 using namespace std;
 #include "a.hpp"
 #include "Student.hpp"
+#include "Vector.hpp"
+#include "test.hpp"
 
 #include <cstdio>
 #include <cstring>
 
 
-
-//_CRT_SECURE_NO_WARNINGS
-
-
-//main.cpp
-
-
-void aloc_int(int**ptr, int old, int new_c)
+void alloc_int(int**ptr, int old, int new_c)
 
 { 
 	int _old = old;
@@ -33,3 +28,24 @@ void aloc_int(int**ptr, int old, int new_c)
 
 
 
+
+int main()
+{
+	Student s;
+	for (int i = 0; i < 60; i++)
+	//{
+		//ExtendArrayInt(int**ptr, int old, int new_c)
+	//}
+		
+
+
+	
+
+	
+	s.AddGrade(i);
+
+	s.Debug();
+
+	system("pause");
+	return 0;
+}

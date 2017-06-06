@@ -27,6 +27,9 @@
     <ClInclude Include="a.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Vector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Student.cpp">
@@ -36,6 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="maincpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
