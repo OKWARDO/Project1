@@ -1,42 +1,23 @@
 #include "Student.hpp"
 #include "Utilities.hpp"
 #include "test.hpp"
+#include "Vector.hpp"
 #include <iostream>
 #include <cstring>
 
 using namespace std;
 
-
-
-
-
-
 void Student::Debug(void)
 {
-	cout << "Number of grade = " << m_counter << endl;
-	for (int i = 0; i < m_counter; i++ )
-		cout << "grade = " << m_grades[ i ] << endl;
+	m_grades.debug();
 
 }
 
-	//void Student::Debug()
-			
-		//for (int i = 0; i < m_counter; i++)
-		
-		//cout << array [] << endl;
 	
-
 void Student::AddGrade(int g)
 {
-	m_grades[m_counter] = g;
-	m_counter++;
-	//if need Extend array
-	if (m_counter == m_capacity)
-	{
-		ExtendArrayInt(&m_grades, m_capacity, 2 * m_capacity);
-		m_capacity += 10;
-	}
-
+	
+	m_grades.AddElement(g);
 
 
 }
@@ -50,88 +31,21 @@ Student::Student()
 
 	
 	m_id = 0;
-	m_FirstName = "John";
-	m_LastName = "Doe";
-	m_capacity = DEFAULT_BUFFER_CAPACITY;
-	m_counter = 0;
-	m_grades = new int[ DEFAULT_BUFFER_CAPACITY ];
-	m_num_grades = 0;
-	//cout << "Enter Grades " << &AddGrade << endl;
+	//m_FirstName = "John";
+	//m_LastName = "Doe";
+	
+		//cout << "Enter Grades " << &AddGrade << endl;
 	cout << "Constructor called" << endl;
 	
 
 };
 Student::~Student()
 {
-	delete[] m_grades;
-	cout << "Destructor called" << endl;
+	
 
 };
 
 
 
-//int main(int argc, char* argv[])
 
 
-
-//{
-//	A a;
-//	a.AddNumber(1);
-//	a.AddNumber(2);
-//	a.AddNumber(3);
-//	a.Debug();
-//	printf("Hello world\r\n");
-//	char c;
-//
-//
-//	int myarray[10];
-//
-//
-//	int size = sizeof(myarray);
-//	printf("The size of an int is = %i", size);
-//	scanf("%c", &c);
-//	return 0;
-//}
-
-//{
-//	Student aStudent;
-//	Student anotherStudent;
-//	Student s;
-//	for (int i = 0; i < 10; i++)
-//		s.AddGrade(i);
-//
-//	s.Debug();
-//	system("pause");
-//}
-
-	/*{
-		int res = 0;
-		int v1 = 1;
-		int v2 = 1;
-		add value(&res &v2 &v2);
-	}*/
-
-	//aStudent.set m_FirstName(" ");
-	//aStudent.set m_LastName(" ");
-	//aStudent.set m_grades(" ");
-	//aStudent.set m_capacity(" ");
-	//aStudent.set m_num_grades(" ");
-	//anotherStudent.set m_FirstName(" ");
-	//anotherStudent.set m_LastName(" ");
-	//anotherStudent.set m_grades(" ");
-	//anotherStudent.set m_capacity(" ");
-	//anotherStudent.set m_num_grades(" ");
-	//cout << "Student: " << aStudent.get _FirstName(), aStudent.get _LastName(), << "FirstName, LastName: " <<
-	//	aStudent.getgrades << "Grade is:  " << endl;
-	//void AddGrade();
-	
-//
-//};
-//	void AddGrade()
-//	{
-//		Student s;
-//		//AddGrade s.Grade;
-//		cout << "End of function" << endl;
-//	};
-//
-//

@@ -22,7 +22,7 @@ template <typename T> void ExtendArray(T** ptr, int old, int new_c)
 
 
 		delete[] temp;
-		return;
+
 	}
 
 

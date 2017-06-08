@@ -59,9 +59,8 @@ void Test_Alloc_Array_Ints(void)
 		ar[i] = i;
 	}
 	ExtendArray< int >(&ar, old, new_c);
-	//for (int i = DEFAULT_BUFFER_CAPACITY; i++ )
-	//	for (int i = 0; i < new_c; i++)
-	//		std::cout << i << std::endl;
+	//for (int i = DEFAULT_BUFFER_CAPACITY; i++);
+		for (int i = 0; i < new_c; i++)	std::cout << i << std::endl;
 
 	delete[] ar;
 }

@@ -1,5 +1,6 @@
 #ifndef TEST_HPP
 #define TEST_HPP
+using namespace std;
 
 void Test_01(void);
 void Test_02(void);
