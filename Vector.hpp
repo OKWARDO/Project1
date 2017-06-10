@@ -46,7 +46,7 @@ public:
 			ExtendArray<T>(&m_buffer, m_capacity, 2 * m_capacity);
 			m_capacity += 10;
 		}
-		m_buffer[m_counter - 1] = element;
+		m_buffer[m_counter-1] = element;
 
 	}
 	void debug(void)

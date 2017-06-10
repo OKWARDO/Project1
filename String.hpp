@@ -11,47 +11,67 @@ public:
 	String(const char* c_str)
 		: Vector< char >() //Super important to memory
 	{
-		size_t sizeOfString = strlen(c_str);
+		size_t sizeOfString = m_counter;
 		for (size_t i = 0; i < sizeOfString; i++)
 			AddElement(c_str[i]);
 	}
 
-	String(const String& rhs)
-	{
+	//String(const String& rhs)
+	//{
 
-	}
-	String()
-	     : Vector< char >()
-	{
+	//}
+	//String()
+	    // : Vector< char >()
+	//{
 
-	}
-	Vector< String > Split(const char* pattern
+	//}
+	//Vector< String > Split(const char* pattern)
+	
+	void FindFirstOccurence()
 	{
+		//int FindFirstOccurence(char letter)
+		
+	
+		//git@github.com
+		
+		for (int i = 0; i <= m_counter; i++)
+		{
+			if (i == m_counter)
+				continue;
+		}
+		
+		{
+			const char * strchr(const char * str, int character);
+			char * strchr(char * str, int character);
+				
+			
+			
+			
+				int pattern_count = 0;
+			}
+	}
+		
 
-	}
 
-	int FindFirstOccurence(char letter)
-	{
-		return (-1);
-	}//git@github.com
-	int pattern_count = 0;
-	for (int i = 0; i < stren(str); i++)
-	{
-		if
-	}
+
 	~String()
 	{
-
-	} 
+		delete[] ar;
+	}
+	 
+	 
 	
-	static void Unit _Test(void)
+	//Vector operator+()
+	
+	static void Unit_Test(void)
 	{
 		String s1("James");
-		Vector< String > VecOfStrings = s1Split("");
+		//Vector< String > VecOfStrings = s1.Split("");
 
-		int FirstOccurrence = s1.FindFirstOccurrence("n");
+		//int FirstOccurrence =  "FindFirstOccurrence" ("James");
 
 	}
+typedef Vector< char > VectorC; 
 
-};
+}
 #endif
