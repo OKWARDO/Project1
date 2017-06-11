@@ -1,12 +1,12 @@
 #ifndef TEST_HPP
 #define TEST_HPP
-using namespace std;
+; using namespace std;
 
 void Test_01(void);
 void Test_02(void);
-//{int old = DEFAULT BUFFER CAPACITY;
-//int new_c = 2 * DEFAULT BUFFER CAPACITY;
-//int ar 
+int old = DEFAULT_BUFFER_CAPACITY;
+int new_c = 2 * DEFAULT_BUFFER_CAPACITY; 
+int a;
 void Test_Alloc_ArrayInts(void);
 void Test_Alloc_ArrayFloats(void);
 void Test_03(void);

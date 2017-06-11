@@ -87,14 +87,14 @@ void Test_Alloc_Array_Floats(void)
 
 	
 	
-//void test03(void)
-//{
-	//A a; //creating an object of type A
-	//a.AddNumber(1);
-	//a.AddNumber(2);
-	//a.AddNumber(6);
+void test03(void)
+{
+	A a; //creating an object of type A
+	a.AddNumber(1);
+	a.AddNumber(2);
+	a.AddNumber(6);
 	//a.debug();
-//}
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

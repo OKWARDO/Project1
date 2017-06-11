@@ -34,15 +34,15 @@ public:
 	
 		//git@github.com
 		
-		for (int i = 0; i <= m_counter; i++)
+		for (int i = 0; i = m_counter; i++)
 		{
 			if (i == m_counter)
 				continue;
 		}
 		
 		{
-			const char * strchr(const char * str, int character);
-			char * strchr(char * str, int character);
+			//const char * strchr(const char * str, int character);
+			//char * strchr(char * str, int character);
 				
 			
 			
@@ -56,7 +56,7 @@ public:
 
 	~String()
 	{
-		delete[] ar;
+		//delete[] a;
 	}
 	 
 	 
@@ -65,7 +65,7 @@ public:
 	
 	static void Unit_Test(void)
 	{
-		String s1("James");
+		String s1("a");
 		//Vector< String > VecOfStrings = s1.Split("");
 
 		//int FirstOccurrence =  "FindFirstOccurrence" ("James");

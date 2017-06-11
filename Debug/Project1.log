@@ -1,15 +1,19 @@
 ﻿  Utilities.cpp
   test.cpp
   Student.cpp
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\vector.hpp(55): warning C4018: '<': signed/unsigned mismatch
-  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\vector.hpp(53): note: while compiling class template member function 'void Vector<int>::debug(void)'
-  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\student.cpp(12): note: see reference to function template instantiation 'void Vector<int>::debug(void)' being compiled
-  c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\student.hpp(16): note: see reference to class template instantiation 'Vector<int>' being compiled
   maincpp.cpp
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\test.hpp(3): error C2143: syntax error: missing ';' before 'using namespace'
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\string.hpp(37): warning C4018: '<=': signed/unsigned mismatch
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\string.hpp(44): error C2883: 'strchr': function declaration conflicts with 'strchr' introduced by using-declaration
-  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.10.25017\include\vcruntime_string.h(67): note: see declaration of 'strchr'
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\string.hpp(59): error C2065: 'ar': undeclared identifier
-c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\string.hpp(59): error C2541: 'delete': cannot delete objects that are not pointers
+c:\users\ccsduser\documents\visual studio 2017\projects\project1\project1\maincpp.cpp(34): warning C4101: 'c': unreferenced local variable
   Generating Code...
+Student.obj : error LNK2005: "int old" (?old@@3HA) already defined in maincpp.obj
+Student.obj : error LNK2005: "int new_c" (?new_c@@3HA) already defined in maincpp.obj
+Student.obj : error LNK2005: "int a" (?a@@3HA) already defined in maincpp.obj
+test.obj : error LNK2005: "int old" (?old@@3HA) already defined in maincpp.obj
+test.obj : error LNK2005: "int new_c" (?new_c@@3HA) already defined in maincpp.obj
+test.obj : error LNK2005: "int a" (?a@@3HA) already defined in maincpp.obj
+maincpp.obj : error LNK2019: unresolved external symbol "public: __thiscall A::A(void)" (??0A@@QAE@XZ) referenced in function _main
+test.obj : error LNK2001: unresolved external symbol "public: __thiscall A::A(void)" (??0A@@QAE@XZ)
+maincpp.obj : error LNK2019: unresolved external symbol "public: __thiscall A::~A(void)" (??1A@@QAE@XZ) referenced in function _main
+test.obj : error LNK2001: unresolved external symbol "public: __thiscall A::~A(void)" (??1A@@QAE@XZ)
+maincpp.obj : error LNK2019: unresolved external symbol "public: void __thiscall A::AddNumber(int)" (?AddNumber@A@@QAEXH@Z) referenced in function _main
+test.obj : error LNK2001: unresolved external symbol "public: void __thiscall A::AddNumber(int)" (?AddNumber@A@@QAEXH@Z)
+C:\Users\CCSDuser\Documents\Visual Studio 2017\Projects\Project1\Project1\Debug\Project1.exe : fatal error LNK1120: 3 unresolved externals

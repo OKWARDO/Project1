@@ -42,17 +42,17 @@ public:
 		m_counter++;
 		//if need Extend array
 		if (m_counter > m_capacity)
-		{
-			ExtendArray<T>(&m_buffer, m_capacity, 2 * m_capacity);
-			m_capacity += 10;
-		}
+		//{
+			//ExtendArray<T>(&m_buffer, m_capacity, 2 * m_capacity);
+			//m_capacity += 10;
+		//}
 		m_buffer[m_counter-1] = element;
 
 	}
 	void debug(void)
 	{
-		cout << "Number of grade = " << m_counter << endl;
-		for (int i = 0; i < m_counter; i++)
+		cout << "First letter grade = " << m_counter << endl;
+		for (int i = 0; i = m_counter; i++)
 			cout << "grade = " << m_buffer[i] << endl;
 
 	}
